@@ -3277,8 +3277,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
     --ar-btn-color: #000;
-    --ar-btn-bg: #448c74;
-    --ar-btn-border-color: #448c74;
+    --ar-btn-bg: #a33e3e;
+    --ar-btn-border-color: #a33e3e;
     --ar-btn-hover-color: #000;
     --ar-btn-hover-bg: #609d89;
     --ar-btn-hover-border-color: #579882;
