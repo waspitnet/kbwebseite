@@ -20676,3 +20676,7 @@ img-comparison-slider:focus {
 }
 
 /*# sourceMappingURL=theme.min.css.map */
+
+.logo {
+    max-width: 25%;
+}
