@@ -63,8 +63,8 @@
     --ar-border-radius-xl: calc(var(--ar-border-radius) * 1.5);
     --ar-border-radius-2xl: calc(var(--ar-border-radius) * 2.25);
     --ar-border-radius-pill: 50rem;
-    --ar-link-color: #448c74;
-    --ar-link-hover-color: #37715d;
+    --ar-link-color: #a33e3e;
+    --ar-link-hover-color: #823333;
     --ar-code-color: #e3116c;
     --ar-highlight-bg: #fff3cd
 }
