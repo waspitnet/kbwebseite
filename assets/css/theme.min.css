@@ -20675,4 +20675,8 @@ img-comparison-slider:focus {
     background-color: #121519
 }
 
+@media screen and (max-width:480px){
+    #themeswitchermobile { display:none; }
+}
+
 /*# sourceMappingURL=theme.min.css.map */
