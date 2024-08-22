@@ -141,6 +141,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
     <!-- Vendor styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css"/>
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
     <!-- Customizer generated styles-->
@@ -367,6 +369,447 @@
         </div>
       </div>
     </footer>
+        <!-- MODALS -->
+      <!-- Soforthilfe modal -->
+      <div class="modal fade" id="soforthilfe" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+          <div class="modal-content rounded-1">
+            <div class="modal-header">
+              <h4 class="modal-title">Soforthilfe im Trauerfall</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Default accordion -->
+              <div class="accordion" id="accordionDefault">
+
+                <!-- Item -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Was ist in einem Sterbefall zu tun ?
+                    </button>
+                  </h3>
+                  <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionDefault">
+                    <div class="accordion-body fs-sm">Bei einem Sterbefall muss umgehend ein Arzt benachrichtigt werden.<br>Sollte der Hausarzt nicht erreichbar sein, können Sie sich an den ärztlichen Notdienst über <a href="tel:+49116117">116117</a> wenden. Im Zweifelsfall wählen Sie den Notruf <a href="tel:+49112">112</a>. Wenn ein Arzt den Todesfall bestätigt hat und eine entsprechende Todesbescheinigung ausgestellt hat, wenden Sie sich an uns.</div>
+                  </div>
+                </div>
+
+                <!-- Item -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Wie geht es weiter ?
+                    </button>
+                  </h3>
+                  <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionDefault">
+                    <div class="accordion-body fs-sm">In einem anschließenden Gespräch beraten wir Sie in aller Ruhe über die weiteren Schritte. Damit wir für Sie die Beurkundung beim zuständigen Standesamt beantragen können, benötigen wir folgende Dokumente, welche abhängig vom Personenstand des Verstorbenen sind:</div>
+                    <div class="accordion-body fs-sm">
+                      <dl class="row mb-0">
+                        <dt class="col-sm-3">Ledig</dt>
+                        <dd class="col-sm-9"><span class="badge border border-success text-success fs-sm">Personalausweis</span> <span class="badge border border-warning text-warning fs-sm">Geburtsurkunde</span></dd>
+                        <dt class="col-sm-3">Verheiratet</dt>
+                        <dd class="col-sm-9"><span class="badge border border-success text-success fs-sm">Personalausweis</span> <span class="badge border border-danger text-danger fs-sm">Heiratsurkunde</span></dd>
+                        <dt class="col-sm-3">Verwitwet</dt>
+                        <dd class="col-sm-9"><span class="badge border border-success text-success fs-sm">Personalausweis</span> <span class="badge border border-danger text-danger fs-sm">Heiratsurkunde</span> <span class="badge border border-dark text-dark fs-sm">Sterbeurkunde des Ehepartners</span></dd>
+                        <dt class="col-sm-3">Geschieden</dt>
+                        <dd class="col-sm-9"><span class="badge border border-success text-success fs-sm">Personalausweis</span> <span class="badge border border-danger text-danger fs-sm">Heiratsurkunde</span> <span class="badge border border-primary text-primary fs-sm">Scheidungsurteil mit Rechtskraftvermerk</span></dd>
+                      </dl>
+                    </div>
+                    <div class="accordion-body fs-sm">Sollten die aufgeführten Dokumente <b>nicht</b> auffindbar sein, können wir diese bei den ausstellenden Ämtern anfordern.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Wir sind rund um die Uhr für Sie erreichbar und stehen Ihnen zur Seite</button>
+                  </h3>
+                  <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionDefault">
+                    <div class="accordion-body fs-sm">
+                      <form class="needs-validation row g-4" novalidate="">
+                        <div class="col-lg-12">
+                          <label class="form-label fs-base" for="name">Name</label>
+                          <input class="form-control form-control-sm2" type="text" placeholder="Ihr Name" required="" id="name">
+                          <div class="invalid-feedback">Bitte geben Sie Ihren Namen an!</div>
+                        </div>
+                        <div class="col-lg-12">
+                          <label class="form-label fs-base" for="email">Email</label>
+                          <input class="form-control form-control-sm2" type="email" placeholder="Ihre Emailadresse" required="" id="email">
+                          <div class="invalid-feedback">Bitte eine gültige Emailadresse eingeben!</div>
+                        </div>
+                        <div class="col-lg-12">
+                          <label class="form-label fs-base" for="phone">Telefon</label>
+                          <input class="form-control form-control-sm2" type="phone" placeholder="Ihre Telefonnummer" required="" id="phone">
+                          <div class="invalid-feedback">Bitte eine gültige Telefonnummer eingeben!</div>
+                        </div>
+                        <div class="col-lg-12">
+                          <label class="form-label fs-base" for="message">Nachricht</label>
+                          <textarea class="form-control form-control-sm2" placeholder="Ihre Nachricht" rows="4" required="" id="message"></textarea>
+                          <div class="invalid-feedback">Schreiben Sie uns etwas!</div>
+                        </div>
+                        <div class="col-lg-12">
+                          <button class="btn btn-lg btn-dark" type="submit">Absenden</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+<!--                 <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Close</button> -->
+              <button type="button" class="btn btn-primary w-100 w-sm-auto ms-sm-3" data-bs-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tree of Life modal -->
+      <div class="modal fade" id="treeoflife" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+          <div class="modal-content rounded-1">
+            <div class="modal-header">
+              <h4 class="modal-title">Tree of Life Bestattungen</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="preview6" role="tabpanel">
+                    <div class="row align-items-center">
+                      <div class="col-md-5 mb-4 mb-md-0 pb-1 pb-md-0">
+                        <div class="binded-content">
+                          <div class="binded-item active" id="item1">
+                            <div class="ratio ratio-4x3">
+                              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-5">
+                                <img src="assets/img/uploads/about/kurre-about.jpg" class="rounded-1" alt="Card image">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="binded-item" id="item2">
+                            <div class="ratio ratio-4x3 ">
+                              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-5">
+                                <img src="assets/img/uploads/services/voraussetzungen.jpg" class="rounded-1" alt="Card image">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="binded-item" id="item3">
+                            <div class="ratio ratio-4x3">
+                              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-5">
+                                <img src="assets/img/uploads/services/ablauf.jpg" class="rounded-1" alt="Card image">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="binded-item" id="item4">
+                            <div class="ratio ratio-4x3">
+                              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-5">
+                                <img src="assets/img/uploads/services/pflanzung.jpg" class="rounded-1" alt="Card image">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-7 ps-xl-5">
+                        <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" data-swiper-options="{
+                    &quot;spaceBetween&quot;: 30,
+                    &quot;loop&quot;: true,
+                    &quot;bindedContent&quot;: true,
+                    &quot;navigation&quot;: {
+                      &quot;prevEl&quot;: &quot;#prev-btn&quot;,
+                      &quot;nextEl&quot;: &quot;#next-btn&quot;
+                    }
+                  }">
+                          <div class="swiper-wrapper text-center text-md-start" id="swiper-wrapper-f14216dce1057b8e5" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-2012px, 0px, 0px);">
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-binded="#item3" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 473px; margin-right: 30px;">
+                              <h3>Third slide</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius pulvinar dui eu ullamcorper. Donec a nisl sed felis pretium posuere ut vitae arcu.</p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-binded="#item1" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 473px; margin-right: 30px;">
+                              <h3>Bestatter Ihres Vertrauens</h3>
+                              <p>Lassen Sie sich von uns vor Ort zu allen Fragen einer Tree of Life – Baumbestattung beraten. Gemeinsam mit uns können Sie am besten Ihre Wünsche und Vorstellungen, bis zur detaillierten Auswahl Ihres Wunschbaumes, umsetzen.</p>
+                            </div>
+                            <div class="swiper-slide" data-swiper-binded="#item2" data-swiper-slide-index="1" role="group" aria-label="2 / 3" style="width: 473px; margin-right: 30px;">
+                              <h3>Voraussetzungen</h3>
+                              <p>Aufgrund des Friedhofszwangs in Deutschland werden "Tree of Life"- Bestattungen nur in spezialisierten Vertragsunternehmen in Ländern, in denen es keine Beisetzungspflicht für Urnen gibt, zum Beispiel der Schweiz, der Tschechischen Republik oder den Niederlanden, durchgeführt. Dazu erfolgt nach Einäscherung und Trauerfeier in Deutschland der Transport der Urne in das beauftragte Spezialunternehmen in eines der o.g. Länder. Erst dort findet dann die Baumbestattung statt.</p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-binded="#item3" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 473px; margin-right: 30px;">
+                              <h3>Ablauf</h3>
+                              <p>Bei der Tree of Life - Baumbestattung wird die Asche des Verstorbenen schrittweise in ein speziell entwickeltes Vitalerde - Substratgemisch gegeben in welches der vorher ausgewählte Wunschbaum gepflanzt wird. Eine sich lang anschließende Durchwurzelungszeit von mindestens einem halben Jahr, die ständige Parameterkontrolle und optimale Wachstumsbedingung in der Spezialbaumschule gewährleisten, dass vom Baum die Nährstoffe aus der Asche absorbiert werden können.</p>
+                            </div>
+                            <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-binded="#item4" data-swiper-slide-index="3" role="group" aria-label="3 / 3" style="width: 473px; margin-right: 30px;">
+                              <h3>Pflanzung</h3>
+                              <p>Ist Ihr Baum pflanzfertig, wird er mit den jeweiligen Beisetzungsdokumenten durch Ihren beauftragten Bestatter an Sie zur persönlichen Abschiednahme übergeben. Danach lassen Sie den Baum an einem geeigneten Ort Ihrer Wahl pflanzen und schaffen sich so ihren eigenen Gedenkplatz. Selbstverständlich besteht auch die Möglichkeit die Pflanzung durch den Bestatter in Erinnerungshainen, Begräbnisforsten oder speziell ausgewiesenen Naturschutzgebieten im In- oder Ausland auch anonymisiert vornehmen zu lassen.</p>
+                            </div>
+                          <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-binded="#item1" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 473px; margin-right: 30px;">
+                              <h3>First slide</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius pulvinar dui eu ullamcorper. Donec a nisl sed felis pretium posuere ut vitae arcu.</p>
+                            </div></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                        <div class="d-flex justify-content-center justify-content-md-start pt-2">
+                          <button class="btn btn-prev btn-icon btn-sm btn-outline-primary rounded-circle me-2" type="button" id="prev-btn" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-f14216dce1057b8e5"><i class="ai-arrow-left"></i></button>
+                          <button class="btn btn-next btn-icon btn-sm btn-outline-primary rounded-circle ms-2" type="button" id="next-btn" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-f14216dce1057b8e5"><i class="ai-arrow-right"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+<!--                 <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Close</button> -->
+              <button type="button" class="btn btn-primary w-100 w-sm-auto ms-sm-3" data-bs-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Betreuung im Trauerfall modal -->
+      <div class="modal fade" id="betreuung" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+          <div class="modal-content rounded-1">
+            <div class="modal-header">
+              <h4 class="modal-title">Betreuung im Trauerfall</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="preview2" role="tabpanel">
+                    <article class="row g-0 border-0"><a class="col-sm-5 bg-repeat-0 bg-size-cover bg-position-center rounded-1" style="background-image: url(assets/img/uploads/services/service01.jpg); min-height: 14rem"></a>
+                      <div class="col-sm-7">
+                        <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+                          <h3>Betreuung im Trauerfall</a></h3>
+                          <p class="d-sm-none d-md-block">Bei einem Trauerfall können Sie sich gerne an uns wenden. Die Betreuung und Beratung kann in unseren Räumlichkeiten oder auch bei Ihnen zu Hause stattfinden. Alle Fragen, die Sie in einem solchen Fall haben, werden von uns beantwortet. Unser Team steht Ihnen rund um die Uhr zur Verfügung.</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+                <a type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" href="kontakt.html"> Zum Kontakt</a>
+              <button type="button" class="btn btn-primary w-100 w-sm-auto ms-sm-3" data-bs-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Überführung modal -->
+      <div class="modal fade" id="ueberfuehrung" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+          <div class="modal-content rounded-1">
+            <div class="modal-header">
+              <h4 class="modal-title">Überführung</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="preview2" role="tabpanel">
+                    <article class="row g-0 border-0"><a class="col-sm-5 bg-repeat-0 bg-size-cover bg-position-center rounded-1" style="background-image: url(assets/img/uploads/services/service02.jpg); min-height: 14rem"></a>
+                      <div class="col-sm-7">
+                        <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+                          <h3>Überführung</a></h3>
+                          <p class="d-sm-none d-md-block">Für die Überführung der verstorbenen Person steht ein modernes Fahrzeug zur Verfügung. Wir übernehmen die notwendigen Überführungen persönlich.</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+                <a type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" href="kontakt.html"> Zum Kontakt</a>
+              <button type="button" class="btn btn-primary w-100 w-sm-auto ms-sm-3" data-bs-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Traueranzeigen modal -->
+      <div class="modal fade" id="traueranzeigen" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+          <div class="modal-content rounded-1">
+            <div class="modal-header">
+              <h4 class="modal-title">Traueranzeigen</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="preview2" role="tabpanel">
+                    <article class="row g-0 border-0"><a class="col-sm-5 bg-repeat-0 bg-size-cover bg-position-center rounded-1" style="background-image: url(assets/img/uploads/services/service03.jpg); min-height: 14rem"></a>
+                      <div class="col-sm-7">
+                        <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+                          <h3>Traueranzeigen</a></h3>
+                          <p class="d-sm-none d-md-block">Wir können Traueranzeigen und Danksagungen für alle Zeitungen gemeinsam erstellen. Wir erstellen Traueranzeigen in unseren Räumlichkeiten oder auch bei Ihnen zu Hause, die von allen Zeitungen ohne Änderungen übernommen werden können.</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+                <a type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" href="kontakt.html"> Zum Kontakt</a>
+              <button type="button" class="btn btn-primary w-100 w-sm-auto ms-sm-3" data-bs-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Trauerpapiere modal -->
+      <div class="modal fade" id="trauerpapiere" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+          <div class="modal-content rounded-1">
+            <div class="modal-header">
+              <h4 class="modal-title">Trauerpapiere</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="preview2" role="tabpanel">
+                    <article class="row g-0 border-0"><a class="col-sm-5 bg-repeat-0 bg-size-cover bg-position-center rounded-1" style="background-image: url(assets/img/uploads/services/service04.jpg); min-height: 14rem"></a>
+                      <div class="col-sm-7">
+                        <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+                          <h3>Trauerpapiere</a></h3>
+                          <p class="d-sm-none d-md-block">Bei der Herstellung von Trauerkarten sind wir nicht auf die Öffnungszeiten der Druckereien angewiesen. Durch die Anschaffung eines Drucksystems können wir Ihnen zeitnah Entwürfe präsentieren und Ihnen Trauerdrucksachen übergeben. Wir haben ein umfangreiches Sortiment an Karten verschiedener Motive vorrätig.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+                <a type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" href="kontakt.html"> Zum Kontakt</a>
+              <button type="button" class="btn btn-primary w-100 w-sm-auto ms-sm-3" data-bs-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Formalitäten modal -->
+      <div class="modal fade" id="formalitaeten" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+          <div class="modal-content rounded-1">
+            <div class="modal-header">
+              <h4 class="modal-title">Formalitäten</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="preview2" role="tabpanel">
+                    <article class="row g-0 border-0"><a class="col-sm-5 bg-repeat-0 bg-size-cover bg-position-center rounded-1" style="background-image: url(assets/img/uploads/services/service05.jpg); min-height: 14rem"></a>
+                      <div class="col-sm-7">
+                        <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+                          <h3>Formalitäten</a></h3>
+                          <p class="d-sm-none d-md-block">Wir übernehmen gerne alle Formalitäten, die in einem Sterbefall notwendig sein sollten. Zu diesen Aufgaben gehört selbstverständlich die Anzeige eines Sterbefalls, die Beantragung einer Beurkundung beim zuständigen Standesamt, die Abmeldungen der Kranken- und Rentenversicherungen sowie die Beantragung der Vorauszahlungen der gesetzlichen Rentenansprüche. Bei der Abwicklung von Sterbegeld- oder Lebensversicherungen stehen wir Ihnen ebenfalls gerne zur Verfügung.
+                          </p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+                <a type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" href="kontakt.html"> Zum Kontakt</a>
+              <button type="button" class="btn btn-primary w-100 w-sm-auto ms-sm-3" data-bs-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Grabauswahl modal -->
+      <div class="modal fade" id="grabauswahl" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+          <div class="modal-content rounded-1">
+            <div class="modal-header">
+              <h4 class="modal-title">Grabauswahl</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="preview2" role="tabpanel">
+                    <article class="row g-0 border-0"><a class="col-sm-5 bg-repeat-0 bg-size-cover bg-position-center rounded-1" style="background-image: url(assets/img/uploads/services/service06.jpg); min-height: 14rem"></a>
+                      <div class="col-sm-7">
+                        <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+                          <h3>Hilfe bei der Grabauswahl</a></h3>
+                          <p class="d-sm-none d-md-block">Es gibt eine Vielzahl an Gräbern, die sehr unterschiedlich sein können. Wir stehen Ihnen gerne auch vor Ort auf den Friedhöfen zur Verfügung, um eine passende Auswahl treffen zu können.</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+                <a type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" href="kontakt.html"> Zum Kontakt</a>
+              <button type="button" class="btn btn-primary w-100 w-sm-auto ms-sm-3" data-bs-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Organisation modal -->
+      <div class="modal fade" id="organisation" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+          <div class="modal-content rounded-1">
+            <div class="modal-header">
+              <h4 class="modal-title">Organisation</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="preview2" role="tabpanel">
+                    <article class="row g-0 border-0"><a class="col-sm-5 bg-repeat-0 bg-size-cover bg-position-center rounded-1" style="background-image: url(assets/img/uploads/services/service07.jpg); min-height: 14rem"></a>
+                      <div class="col-sm-7">
+                        <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+                          <h3>Organisation der Trauerfeier und einer Beisetzung</a></h3>
+                          <p class="d-sm-none d-md-block">Wir übernehmen die Organisation und Koordination der Trauerfeier und stehen Ihnen beratend zur Seite. Wir stellen Ihnen die Kontakte zu den Kirchengemeinden her. Wir sind weiterhin in Kontakt mit ausgewählten Trauerrednern und einer Vielzahl von Musikern.</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+                <a type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" href="kontakt.html"> Zum Kontakt</a>
+              <button type="button" class="btn btn-primary w-100 w-sm-auto ms-sm-3" data-bs-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bestattervorsorge modal -->
+      <div class="modal fade" id="vorsorge" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+          <div class="modal-content rounded-1">
+            <div class="modal-header">
+              <h4 class="modal-title">Bestattervorsorge</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="preview2" role="tabpanel">
+                    <article class="row g-0 border-0"><a class="col-sm-5 bg-repeat-0 bg-size-cover bg-position-center rounded-1" style="background-image: url(assets/img/uploads/services/service01.jpg); min-height: 14rem"></a>
+                      <div class="col-sm-7">
+                        <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+                          <h3>Bestattungsvorsorge </a></h3>
+                          <p class="d-sm-none d-md-block">Viele Menschen fragen sich bereits zu Lebzeiten, wie ihre eigene Bestattung aussehen soll. Wir bieten Ihnen eine komplette Bestattungsvorsorge an, die Ihre Bedürfnisse abdeckt. Wir stehen Ihnen gerne für eine kostenlose und unverbindliche Beratung zur Verfügung.</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+                <a type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" href="kontakt.html"> Zum Kontakt</a>
+              <button type="button" class="btn btn-primary w-100 w-sm-auto ms-sm-3" data-bs-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>
       <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
@@ -374,6 +817,14 @@
     <!-- Vendor scripts: js libraries and plugins-->
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/shufflejs/dist/shuffle.min.js"></script>
+    <!-- Main theme script-->
     <!-- Main theme script-->
     <script src="assets/js/theme.min.js"></script>
   </body>
